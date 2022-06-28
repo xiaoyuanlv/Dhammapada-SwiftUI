@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D00B3094286177C200F00870 /* DhammapadaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B3093286177C200F00870 /* DhammapadaApp.swift */; };
+		D00B3096286177C200F00870 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B3095286177C200F00870 /* ContentView.swift */; };
+		D00B3098286177C500F00870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00B3097286177C500F00870 /* Assets.xcassets */; };
+		D00B309B286177C500F00870 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00B309A286177C500F00870 /* Preview Assets.xcassets */; };
+		D00B30A4286181AE00F00870 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30A3286181AE00F00870 /* SplashView.swift */; };
+		D00B30A628618A6100F00870 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30A528618A6100F00870 /* Extensions.swift */; };
+		D00B30A828618BAC00F00870 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30A728618BAC00F00870 /* CategoryView.swift */; };
+		D00B30AC28618BF700F00870 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30AB28618BF700F00870 /* PrimaryButton.swift */; };
+		D00B30BD28619F4D00F00870 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30BC28619F4D00F00870 /* RoundedButton.swift */; };
+		D00B30C22861A86300F00870 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30C12861A86300F00870 /* Category.swift */; };
+		D00B30C92861AE6200F00870 /* CategoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30C82861AE6200F00870 /* CategoryCard.swift */; };
+		D00B30CB2861AF7600F00870 /* DhammaListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CA2861AF7600F00870 /* DhammaListView.swift */; };
+		D00B30CD2861AF8500F00870 /* DhammaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CC2861AF8500F00870 /* DhammaCard.swift */; };
+		D00B30CF2861B11A00F00870 /* Dhamma.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CE2861B11A00F00870 /* Dhamma.swift */; };
+		D00B30D12861B87E00F00870 /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30D02861B87D00F00870 /* BookmarkListView.swift */; };
+		D078D05E2865FDC400102FED /* dhammapada.db in Resources */ = {isa = PBXBuildFile; fileRef = D078D05D2865FDC300102FED /* dhammapada.db */; };
+		D07A0EBA28654E1C001D0697 /* DhammaAtrrCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A0EB928654E1C001D0697 /* DhammaAtrrCard.swift */; };
+		D07F41FA2862EB4600806489 /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41F92862EB4600806489 /* AppDataManager.swift */; };
+		D0A219F3286376430094B5A8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = D0A219F2286376430094B5A8 /* GRDB */; };
+		D0DF9EA0286498EC00A51E99 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = D0DF9E9F286498EC00A51E99 /* SwiftUIPager */; };
+		D0FBA6602862105E00270D3B /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBA65F2862105E00270D3B /* LanguageButton.swift */; };
+		D0FBA66428621F3200270D3B /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBA66328621F3100270D3B /* UserDefaultsUtils.swift */; };
+		D0FBA66628621F5600270D3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBA66528621F5600270D3B /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D00B3090286177C200F00870 /* Dhammapada.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dhammapada.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00B3093286177C200F00870 /* DhammapadaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhammapadaApp.swift; sourceTree = "<group>"; };
+		D00B3095286177C200F00870 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D00B3097286177C500F00870 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D00B309A286177C500F00870 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D00B30A3286181AE00F00870 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		D00B30A528618A6100F00870 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D00B30A728618BAC00F00870 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		D00B30AB28618BF700F00870 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		D00B30BC28619F4D00F00870 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		D00B30C12861A86300F00870 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D00B30C82861AE6200F00870 /* CategoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCard.swift; sourceTree = "<group>"; };
+		D00B30CA2861AF7600F00870 /* DhammaListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhammaListView.swift; sourceTree = "<group>"; };
+		D00B30CC2861AF8500F00870 /* DhammaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhammaCard.swift; sourceTree = "<group>"; };
+		D00B30CE2861B11A00F00870 /* Dhamma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dhamma.swift; sourceTree = "<group>"; };
+		D00B30D02861B87D00F00870 /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
+		D078D05D2865FDC300102FED /* dhammapada.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dhammapada.db; sourceTree = "<group>"; };
+		D07A0EB928654E1C001D0697 /* DhammaAtrrCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhammaAtrrCard.swift; sourceTree = "<group>"; };
+		D07F41F92862EB4600806489 /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
+		D0CE35FE286AD017001C9469 /* Dhammapada.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dhammapada.entitlements; sourceTree = "<group>"; };
+		D0FBA65F2862105E00270D3B /* LanguageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageButton.swift; sourceTree = "<group>"; };
+		D0FBA66328621F3100270D3B /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
+		D0FBA66528621F5600270D3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D00B308D286177C200F00870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0DF9EA0286498EC00A51E99 /* SwiftUIPager in Frameworks */,
+				D0A219F3286376430094B5A8 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D00B3087286177C200F00870 = {
+			isa = PBXGroup;
+			children = (
+				D00B3092286177C200F00870 /* Dhammapada */,
+				D00B3091286177C200F00870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D00B3091286177C200F00870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D00B3090286177C200F00870 /* Dhammapada.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D00B3092286177C200F00870 /* Dhammapada */ = {
+			isa = PBXGroup;
+			children = (
+				D0CE35FE286AD017001C9469 /* Dhammapada.entitlements */,
+				D078D05D2865FDC300102FED /* dhammapada.db */,
+				D00B3093286177C200F00870 /* DhammapadaApp.swift */,
+				D00B30BE2861A7EE00F00870 /* Models */,
+				D00B30A22861819A00F00870 /* Views */,
+				D00B30A128617EF400F00870 /* Components */,
+				D0FBA66128621B9600270D3B /* Utils */,
+				D00B3095286177C200F00870 /* ContentView.swift */,
+				D07F41F92862EB4600806489 /* AppDataManager.swift */,
+				D00B30A528618A6100F00870 /* Extensions.swift */,
+				D00B3097286177C500F00870 /* Assets.xcassets */,
+				D00B3099286177C500F00870 /* Preview Content */,
+			);
+			path = Dhammapada;
+			sourceTree = "<group>";
+		};
+		D00B3099286177C500F00870 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D00B309A286177C500F00870 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D00B30A128617EF400F00870 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D00B30AB28618BF700F00870 /* PrimaryButton.swift */,
+				D00B30BC28619F4D00F00870 /* RoundedButton.swift */,
+				D00B30C82861AE6200F00870 /* CategoryCard.swift */,
+				D00B30CC2861AF8500F00870 /* DhammaCard.swift */,
+				D0FBA65F2862105E00270D3B /* LanguageButton.swift */,
+				D07A0EB928654E1C001D0697 /* DhammaAtrrCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D00B30A22861819A00F00870 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D00B30A3286181AE00F00870 /* SplashView.swift */,
+				D00B30A728618BAC00F00870 /* CategoryView.swift */,
+				D00B30CA2861AF7600F00870 /* DhammaListView.swift */,
+				D00B30D02861B87D00F00870 /* BookmarkListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D00B30BE2861A7EE00F00870 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D00B30C12861A86300F00870 /* Category.swift */,
+				D00B30CE2861B11A00F00870 /* Dhamma.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D0FBA66128621B9600270D3B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D0FBA66328621F3100270D3B /* UserDefaultsUtils.swift */,
+				D0FBA66528621F5600270D3B /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D00B308F286177C200F00870 /* Dhammapada */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D00B309E286177C500F00870 /* Build configuration list for PBXNativeTarget "Dhammapada" */;
+			buildPhases = (
+				D00B308C286177C200F00870 /* Sources */,
+				D00B308D286177C200F00870 /* Frameworks */,
+				D00B308E286177C200F00870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dhammapada;
+			packageProductDependencies = (
+				D0A219F2286376430094B5A8 /* GRDB */,
+				D0DF9E9F286498EC00A51E99 /* SwiftUIPager */,
+			);
+			productName = Dhammapada;
+			productReference = D00B3090286177C200F00870 /* Dhammapada.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D00B3088286177C200F00870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					D00B308F286177C200F00870 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = D00B308B286177C200F00870 /* Build configuration list for PBXProject "Dhammapada" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D00B3087286177C200F00870;
+			packageReferences = (
+				D0A219F1286376430094B5A8 /* XCRemoteSwiftPackageReference "GRDB" */,
+				D0DF9E9E286498EC00A51E99 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+			);
+			productRefGroup = D00B3091286177C200F00870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D00B308F286177C200F00870 /* Dhammapada */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D00B308E286177C200F00870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D078D05E2865FDC400102FED /* dhammapada.db in Resources */,
+				D00B309B286177C500F00870 /* Preview Assets.xcassets in Resources */,
+				D00B3098286177C500F00870 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D00B308C286177C200F00870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D00B30A4286181AE00F00870 /* SplashView.swift in Sources */,
+				D00B30CF2861B11A00F00870 /* Dhamma.swift in Sources */,
+				D0FBA6602862105E00270D3B /* LanguageButton.swift in Sources */,
+				D00B30C22861A86300F00870 /* Category.swift in Sources */,
+				D00B3096286177C200F00870 /* ContentView.swift in Sources */,
+				D00B3094286177C200F00870 /* DhammapadaApp.swift in Sources */,
+				D0FBA66428621F3200270D3B /* UserDefaultsUtils.swift in Sources */,
+				D00B30BD28619F4D00F00870 /* RoundedButton.swift in Sources */,
+				D00B30D12861B87E00F00870 /* BookmarkListView.swift in Sources */,
+				D07F41FA2862EB4600806489 /* AppDataManager.swift in Sources */,
+				D00B30CD2861AF8500F00870 /* DhammaCard.swift in Sources */,
+				D00B30CB2861AF7600F00870 /* DhammaListView.swift in Sources */,
+				D00B30AC28618BF700F00870 /* PrimaryButton.swift in Sources */,
+				D00B30A628618A6100F00870 /* Extensions.swift in Sources */,
+				D00B30C92861AE6200F00870 /* CategoryCard.swift in Sources */,
+				D00B30A828618BAC00F00870 /* CategoryView.swift in Sources */,
+				D07A0EBA28654E1C001D0697 /* DhammaAtrrCard.swift in Sources */,
+				D0FBA66628621F5600270D3B /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D00B309C286177C500F00870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D00B309D286177C500F00870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D00B309F286177C500F00870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dhammapada/Dhammapada.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
+				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyuanlv.dhammapada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D00B30A0286177C500F00870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Dhammapada/Dhammapada.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
+				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyuanlv.dhammapada;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D00B308B286177C200F00870 /* Build configuration list for PBXProject "Dhammapada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00B309C286177C500F00870 /* Debug */,
+				D00B309D286177C500F00870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D00B309E286177C500F00870 /* Build configuration list for PBXNativeTarget "Dhammapada" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D00B309F286177C500F00870 /* Debug */,
+				D00B30A0286177C500F00870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0A219F1286376430094B5A8 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.25.0;
+			};
+		};
+		D0DF9E9E286498EC00A51E99 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D0A219F2286376430094B5A8 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0A219F1286376430094B5A8 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		D0DF9E9F286498EC00A51E99 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0DF9E9E286498EC00A51E99 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D00B3088286177C200F00870 /* Project object */;
+}
