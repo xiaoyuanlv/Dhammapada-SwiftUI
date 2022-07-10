@@ -66,6 +66,7 @@ struct CategoryCard: View {
                 
         }
         
+        
     }
 }
 

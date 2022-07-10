@@ -123,6 +123,25 @@ struct BookmarkListView: View {
                     }
             }
             .padding(.bottom, 10)
+                
+                if(UIDevice.current.userInterfaceIdiom == .pad) {
+                    VStack {
+                        HStack(alignment: .center, spacing: 20) {
+                            Button {
+                                page.update(.previous)
+                            } label: {
+                                PrimaryButton(text: "Prev Page")
+                            }
+                            
+                            Button {
+                                page.update(.next)
+                            } label: {
+                                PrimaryButton(text: "Next Page")
+                            }
+                        }
+                    }
+                }
+                
                 } else {
                    
                         Text("No Bookmark Yet.")

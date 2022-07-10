@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/fermoya/SwiftUIPager",
       "state" : {
-        "revision" : "6e4170ef7cafd04b3d8ab8dc5b0469036b2bcd6a",
-        "version" : "2.4.0"
+        "branch" : "main",
+        "revision" : "669d20f0ab90dc6cac5aadbb8462505875805459"
       }
     }
   ],

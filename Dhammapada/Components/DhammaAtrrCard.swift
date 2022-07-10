@@ -33,16 +33,16 @@ struct DhammaAtrrCard: View {
                                         let nsAttrString = try? NSAttributedString(data: data,
                                         options: [.documentType:NSAttributedString.DocumentType.html],
                                         documentAttributes: nil) {
-                                                
+                                        
+                                        Text(AttributedString(nsAttrString))
+                                            .lineSpacing(10)
+                                            .font(.title)
+                                            .foregroundColor(Color.text)
+                                            .padding()
+                                            .padding(.top, 20)
+                                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                                        
-                                            Text(AttributedString(nsAttrString))
-                                                .lineSpacing(10)
-                                                .font(.title)
-                                                .foregroundColor(Color.text)
-                                                .padding()
-                                                .padding(.top, 20)
-                                                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                                           
+                                         
                                     }
                                     
                                 }
@@ -105,7 +105,15 @@ struct DhammaAtrrCard: View {
                 
         }.onAppear() {
          
-            msgToShow = "<h2 style='color:\(appDataManager.textColor)'; line-height: 20;>"+dhamma.message+"</h2>"
+            if(UIDevice.current.userInterfaceIdiom == .phone) {
+              
+                msgToShow = "<p style='font-size: 2em; color:\(appDataManager.textColor)'; line-height: 2.2em;>"+dhamma.message+"</p>"
+               
+            } else if (UIDevice.current.userInterfaceIdiom == .pad) {
+                
+                msgToShow = "<p style='font-size: 3em;color:\(appDataManager.textColor)'; line-height: 22px;>"+dhamma.message+"</p>"
+                
+            }
            
         }
     }

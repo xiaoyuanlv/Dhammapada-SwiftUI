@@ -116,7 +116,6 @@ struct DhammaListView: View {
                 }
                    
               
-            
             Spacer()
             
             HStack(alignment: .center, spacing: 10) {
@@ -151,14 +150,37 @@ struct DhammaListView: View {
                 } label: {
                     PrimaryButton(text: "Pāḷi")
                 }
+                
+               
+               
             }
             .padding(.bottom, 10)
+                
+                
+                if(UIDevice.current.userInterfaceIdiom == .pad) {
+                    VStack {
+                        HStack(alignment: .center, spacing: 20) {
+                            Button {
+                                page.update(.previous)
+                            } label: {
+                                PrimaryButton(text: "Prev Page")
+                            }
+                            
+                            Button {
+                                page.update(.next)
+                            } label: {
+                                PrimaryButton(text: "Next Page")
+                            }
+                        }
+                    }
+                }
             
             Image("lake")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 250, height: 70)
-                
+               
+              
         }
         .navigationBarTitle("")
         .navigationBarBackButtonHidden(true)

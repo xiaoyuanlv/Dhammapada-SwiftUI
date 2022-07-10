@@ -45,8 +45,8 @@ struct SplashView: View {
                 .background(Color("Background"))
                 
             }
-            .navigationViewStyle(StackNavigationViewStyle())
             .edgesIgnoringSafeArea(.all)
+            .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarHidden(true)
             .onAppear() {
                 Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { (_) in

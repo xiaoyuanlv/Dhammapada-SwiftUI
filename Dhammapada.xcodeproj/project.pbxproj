@@ -22,11 +22,11 @@
 		D00B30CD2861AF8500F00870 /* DhammaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CC2861AF8500F00870 /* DhammaCard.swift */; };
 		D00B30CF2861B11A00F00870 /* Dhamma.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CE2861B11A00F00870 /* Dhamma.swift */; };
 		D00B30D12861B87E00F00870 /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30D02861B87D00F00870 /* BookmarkListView.swift */; };
+		D077AD77287A520200FF6618 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = D077AD76287A520200FF6618 /* SwiftUIPager */; };
 		D078D05E2865FDC400102FED /* dhammapada.db in Resources */ = {isa = PBXBuildFile; fileRef = D078D05D2865FDC300102FED /* dhammapada.db */; };
 		D07A0EBA28654E1C001D0697 /* DhammaAtrrCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A0EB928654E1C001D0697 /* DhammaAtrrCard.swift */; };
 		D07F41FA2862EB4600806489 /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41F92862EB4600806489 /* AppDataManager.swift */; };
 		D0A219F3286376430094B5A8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = D0A219F2286376430094B5A8 /* GRDB */; };
-		D0DF9EA0286498EC00A51E99 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = D0DF9E9F286498EC00A51E99 /* SwiftUIPager */; };
 		D0FBA6602862105E00270D3B /* LanguageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBA65F2862105E00270D3B /* LanguageButton.swift */; };
 		D0FBA66428621F3200270D3B /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBA66328621F3100270D3B /* UserDefaultsUtils.swift */; };
 		D0FBA66628621F5600270D3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FBA66528621F5600270D3B /* Constants.swift */; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DF9EA0286498EC00A51E99 /* SwiftUIPager in Frameworks */,
+				D077AD77287A520200FF6618 /* SwiftUIPager in Frameworks */,
 				D0A219F3286376430094B5A8 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +174,7 @@
 			name = Dhammapada;
 			packageProductDependencies = (
 				D0A219F2286376430094B5A8 /* GRDB */,
-				D0DF9E9F286498EC00A51E99 /* SwiftUIPager */,
+				D077AD76287A520200FF6618 /* SwiftUIPager */,
 			);
 			productName = Dhammapada;
 			productReference = D00B3090286177C200F00870 /* Dhammapada.app */;
@@ -206,7 +206,7 @@
 			mainGroup = D00B3087286177C200F00870;
 			packageReferences = (
 				D0A219F1286376430094B5A8 /* XCRemoteSwiftPackageReference "GRDB" */,
-				D0DF9E9E286498EC00A51E99 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
+				D077AD75287A520200FF6618 /* XCRemoteSwiftPackageReference "SwiftUIPager" */,
 			);
 			productRefGroup = D00B3091286177C200F00870 /* Products */;
 			projectDirPath = "";
@@ -379,8 +379,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Dhammapada/Dhammapada.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
 				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
 				ENABLE_PREVIEWS = YES;
@@ -397,10 +399,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyuanlv.dhammapada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Apple Development: Seint Seint Thu";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "XY-Dhamma-Profile";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -413,8 +418,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Dhammapada/Dhammapada.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
 				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
 				ENABLE_PREVIEWS = YES;
@@ -431,10 +438,13 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyuanlv.dhammapada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Apple Development: Seint Seint Thu";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Apple Development: Seint Seint Thu";
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,6 +475,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D077AD75287A520200FF6618 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		D0A219F1286376430094B5A8 /* XCRemoteSwiftPackageReference "GRDB" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/groue/GRDB.swift";
@@ -473,26 +491,18 @@
 				minimumVersion = 5.25.0;
 			};
 		};
-		D0DF9E9E286498EC00A51E99 /* XCRemoteSwiftPackageReference "SwiftUIPager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/fermoya/SwiftUIPager";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D077AD76287A520200FF6618 /* SwiftUIPager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D077AD75287A520200FF6618 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
+			productName = SwiftUIPager;
+		};
 		D0A219F2286376430094B5A8 /* GRDB */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D0A219F1286376430094B5A8 /* XCRemoteSwiftPackageReference "GRDB" */;
 			productName = GRDB;
-		};
-		D0DF9E9F286498EC00A51E99 /* SwiftUIPager */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D0DF9E9E286498EC00A51E99 /* XCRemoteSwiftPackageReference "SwiftUIPager" */;
-			productName = SwiftUIPager;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

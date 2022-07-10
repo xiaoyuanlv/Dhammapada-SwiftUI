@@ -30,14 +30,31 @@ struct DhammaCard: View {
                                 
                                 if(msgToShow != "") {
                               
-                                 Text(msgToShow)
-                                    .lineSpacing(17)
-                                    .font(.system(size: 17))
-                                    .foregroundColor(Color.text)
-                                    .padding()
-                                    .padding(.top, 20)
-                                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                                    
+                                   if(UIDevice.current.userInterfaceIdiom == .phone) {
+                                     Text(msgToShow)
+                                        .lineSpacing(17)
+                                        .font(.system(size: 17))
+                                        .foregroundColor(Color.text)
+                                        .padding()
+                                        .padding(.top, 20)
+                                        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                                    } else if(UIDevice.current.userInterfaceIdiom == .pad) {
+                                        Text(msgToShow)
+                                           .lineSpacing(33)
+                                           .font(.system(size: 33))
+                                           .foregroundColor(Color.text)
+                                           .padding()
+                                           .padding(.top, 30)
+                                           .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                                    } else {
+                                        Text(msgToShow)
+                                           .lineSpacing(21)
+                                           .font(.system(size: 20))
+                                           .foregroundColor(Color.text)
+                                           .padding()
+                                           .padding(.top, 22)
+                                           .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                                    }
                                 }
                                 
                             }.frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -48,17 +65,28 @@ struct DhammaCard: View {
                 .background(Color.cardBackground)
                 .shadow(radius: 10)
                 .cornerRadius(20)
-                .padding(10)
+                .padding(12)
                 
-                Text("\(dhamma.id)")
-                    .bold()
-                    .shadow(radius: 5)
-                    .frame(width: 40, height: 40)
-                    .foregroundColor(Color.text)
-                    .background(Color.cardBackground)
-                    .cornerRadius(20)
-                    .padding()
-                    
+                if(UIDevice.current.userInterfaceIdiom == .phone) {
+                    Text("\(dhamma.id)")
+                        .bold()
+                        .shadow(radius: 5)
+                        .frame(width: 40, height: 40)
+                        .foregroundColor(Color.text)
+                        .background(Color.cardBackground)
+                        .cornerRadius(20)
+                        .padding()
+                } else {
+                    Text("\(dhamma.id)")
+                        .bold()
+                        .font(.system(size: 20))
+                        .shadow(radius: 5)
+                        .frame(width: 50, height: 50)
+                        .foregroundColor(Color.text)
+                        .background(Color.cardBackground)
+                        .cornerRadius(20)
+                        .padding()
+                }
             }
             .padding()
             
