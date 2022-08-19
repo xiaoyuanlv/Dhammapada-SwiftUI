@@ -22,8 +22,8 @@
 		D00B30CD2861AF8500F00870 /* DhammaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CC2861AF8500F00870 /* DhammaCard.swift */; };
 		D00B30CF2861B11A00F00870 /* Dhamma.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30CE2861B11A00F00870 /* Dhamma.swift */; };
 		D00B30D12861B87E00F00870 /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00B30D02861B87D00F00870 /* BookmarkListView.swift */; };
+		D01A1DD128AFD77D002EBE8F /* dhammapada2.db in Resources */ = {isa = PBXBuildFile; fileRef = D01A1DD028AFD77D002EBE8F /* dhammapada2.db */; };
 		D077AD77287A520200FF6618 /* SwiftUIPager in Frameworks */ = {isa = PBXBuildFile; productRef = D077AD76287A520200FF6618 /* SwiftUIPager */; };
-		D078D05E2865FDC400102FED /* dhammapada.db in Resources */ = {isa = PBXBuildFile; fileRef = D078D05D2865FDC300102FED /* dhammapada.db */; };
 		D07A0EBA28654E1C001D0697 /* DhammaAtrrCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07A0EB928654E1C001D0697 /* DhammaAtrrCard.swift */; };
 		D07F41FA2862EB4600806489 /* AppDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07F41F92862EB4600806489 /* AppDataManager.swift */; };
 		D0A219F3286376430094B5A8 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = D0A219F2286376430094B5A8 /* GRDB */; };
@@ -49,7 +49,7 @@
 		D00B30CC2861AF8500F00870 /* DhammaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhammaCard.swift; sourceTree = "<group>"; };
 		D00B30CE2861B11A00F00870 /* Dhamma.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dhamma.swift; sourceTree = "<group>"; };
 		D00B30D02861B87D00F00870 /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
-		D078D05D2865FDC300102FED /* dhammapada.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dhammapada.db; sourceTree = "<group>"; };
+		D01A1DD028AFD77D002EBE8F /* dhammapada2.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dhammapada2.db; sourceTree = "<group>"; };
 		D07A0EB928654E1C001D0697 /* DhammaAtrrCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DhammaAtrrCard.swift; sourceTree = "<group>"; };
 		D07F41F92862EB4600806489 /* AppDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataManager.swift; sourceTree = "<group>"; };
 		D0CE35FE286AD017001C9469 /* Dhammapada.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dhammapada.entitlements; sourceTree = "<group>"; };
@@ -90,8 +90,8 @@
 		D00B3092286177C200F00870 /* Dhammapada */ = {
 			isa = PBXGroup;
 			children = (
+				D01A1DD028AFD77D002EBE8F /* dhammapada2.db */,
 				D0CE35FE286AD017001C9469 /* Dhammapada.entitlements */,
-				D078D05D2865FDC300102FED /* dhammapada.db */,
 				D00B3093286177C200F00870 /* DhammapadaApp.swift */,
 				D00B30BE2861A7EE00F00870 /* Models */,
 				D00B30A22861819A00F00870 /* Views */,
@@ -222,7 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D078D05E2865FDC400102FED /* dhammapada.db in Resources */,
+				D01A1DD128AFD77D002EBE8F /* dhammapada2.db in Resources */,
 				D00B309B286177C500F00870 /* Preview Assets.xcassets in Resources */,
 				D00B3098286177C500F00870 /* Assets.xcassets in Resources */,
 			);
@@ -382,7 +382,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
 				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
 				ENABLE_PREVIEWS = YES;
@@ -399,7 +399,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyuanlv.dhammapada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Apple Development: Seint Seint Thu";
@@ -419,9 +419,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Dhammapada/Dhammapada.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Distribution";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Distribution";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
 				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
 				ENABLE_PREVIEWS = YES;
@@ -438,11 +438,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoyuanlv.dhammapada;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "Apple Development: Seint Seint Thu";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Apple Development: Seint Seint Thu";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "XY-Dhamma-Profile";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

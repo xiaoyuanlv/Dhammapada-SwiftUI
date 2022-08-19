@@ -28,7 +28,7 @@ final class AppDataManager: ObservableObject {
     }
     
     func getDhammaList() {
-        copyDatabaseIfNeeded("dhammapada")
+        copyDatabaseIfNeeded("dhammapada2")
         populateDhammaDataList()
     }
     
@@ -36,7 +36,7 @@ final class AppDataManager: ObservableObject {
         do {
             
             let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let databaseURL = fileURL.appendingPathComponent("dhammapada.db")
+            let databaseURL = fileURL.appendingPathComponent("dhammapada2.db")
          
             let dbQueue = try DatabaseQueue(path: databaseURL.absoluteString)
        
@@ -59,7 +59,7 @@ final class AppDataManager: ObservableObject {
             dhammaList = []
             if(selectedCategoryId > 0) {
                 let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-                let databaseURL = fileURL.appendingPathComponent("dhammapada.db")
+                let databaseURL = fileURL.appendingPathComponent("dhammapada2.db")
              
                 let dbQueue = try DatabaseQueue(path: databaseURL.absoluteString)
                 
@@ -87,11 +87,11 @@ final class AppDataManager: ObservableObject {
     func populateDhammaFavDataList() {
 
         do {
-            copyDatabaseIfNeeded("dhammapada")
+            copyDatabaseIfNeeded("dhammapada2")
             
             favList = []
             let fileURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-            let databaseURL = fileURL.appendingPathComponent("dhammapada.db")
+            let databaseURL = fileURL.appendingPathComponent("dhammapada2.db")
          
             let dbQueue = try DatabaseQueue(path: databaseURL.absoluteString)
        
@@ -116,11 +116,27 @@ final class AppDataManager: ObservableObject {
             print("No doc urls")
             return
         }
+        
+        // Remove old file
+        let versionOneDatabaseURL = documentsUrl.first!.appendingPathComponent("dhammapada.db")
+        
+        if ((try? versionOneDatabaseURL.checkResourceIsReachable()) != nil) {
+            do {
+                try fileManager.removeItem(atPath: versionOneDatabaseURL.path)
+            } catch _ as NSError {
+                print("Couldn't remove v1 file")
+            }
+        } else {
+            print("Not Found")
+        }
 
+        // Copy New File
+        
         let finalDatabaseURL = documentsUrl.first!.appendingPathComponent("\(database).db")
 
         if !( (try? finalDatabaseURL.checkResourceIsReachable()) ?? false) {
             print("DB does not exist in documents folder")
+            
 
             let databaseInMainBundleURL = Bundle.main.resourceURL?.appendingPathComponent("\(database).db")
 

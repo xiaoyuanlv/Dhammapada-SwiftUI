@@ -123,6 +123,7 @@ struct DhammaCard: View {
         }.onAppear() {
          
             switch language {
+                case "en": msgToShow = dhamma.message
                 case "mm": msgToShow = dhamma.mm_message
                 case "pali": msgToShow = dhamma.pali_message
                 case "roman": msgToShow = dhamma.pali_roman

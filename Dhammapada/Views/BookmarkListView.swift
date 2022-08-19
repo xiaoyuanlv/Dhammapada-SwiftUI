@@ -51,10 +51,13 @@ struct BookmarkListView: View {
                           data: appDataManager.favList,
                           id: \.id,
                           content: { dhamma in
-                                DhammaAtrrCard(dhamma: dhamma)
+                                DhammaCard(dhamma: dhamma,  language: "en")
                                     .environmentObject(appDataManager)
                     })
-                    .interactive(scale: 0.8)
+                    .sensitivity(.high)
+                    .itemSpacing(10)
+                        .interactive(rotation: true)
+                        .interactive(scale: 0.7)
                 }
                 
                 else if(appDataManager.selectedLang == "mm") {
@@ -65,7 +68,10 @@ struct BookmarkListView: View {
                                 DhammaCard(dhamma: dhamma, language: "mm")
                                     .environmentObject(appDataManager)
                     })
-                    .interactive(scale: 0.8)
+                    .sensitivity(.high)
+                    .itemSpacing(10)
+                        .interactive(rotation: true)
+                        .interactive(scale: 0.7)
                 }
                 
                 else if(appDataManager.selectedLang == "pali") {
@@ -76,7 +82,10 @@ struct BookmarkListView: View {
                                 DhammaCard(dhamma: dhamma, language: "pali")
                                     .environmentObject(appDataManager)
                     })
-                    .interactive(scale: 0.8)
+                    .sensitivity(.high)
+                    .itemSpacing(10)
+                        .interactive(rotation: true)
+                        .interactive(scale: 0.7)
                 }
                 
                 else if(appDataManager.selectedLang == "roman") {
@@ -87,7 +96,10 @@ struct BookmarkListView: View {
                                 DhammaCard(dhamma: dhamma,  language: "roman")
                                     .environmentObject(appDataManager)
                     })
-                    .interactive(scale: 0.8)
+                    .sensitivity(.high)
+                    .itemSpacing(10)
+                        .interactive(rotation: true)
+                        .interactive(scale: 0.7)
                 }
             
             Spacer()
