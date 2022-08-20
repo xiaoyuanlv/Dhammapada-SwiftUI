@@ -382,7 +382,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
 				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
 				ENABLE_PREVIEWS = YES;
@@ -421,7 +421,7 @@
 				CODE_SIGN_IDENTITY = "Apple Distribution";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"Dhammapada/Preview Content\"";
 				DEVELOPMENT_TEAM = 2VBR9DN2Q2;
 				ENABLE_PREVIEWS = YES;
