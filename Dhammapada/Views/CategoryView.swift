@@ -97,7 +97,7 @@ struct CategoryListView: View {
                     }.alert(isPresented: $showingAlert) {
                         Alert(
                             title: Text("Dhammapada (ဓမ္မပဒ)"),
-                            message: Text("The Dhammapada is a collection of sayings of the Buddha in verse form and one of the most widely read and best known Buddhist scriptures. With ( English, Myanmar, Burmese: ပါဠိ Pali). Version 1.1"),
+                            message: Text("The Dhammapada is a collection of sayings of the Buddha in verse form and one of the most widely read and best known Buddhist scriptures. With ( English, Myanmar, Burmese: ပါဠိ Pali). Version 1.4"),
                             dismissButton: .default(Text("Close"))
                         )
                         

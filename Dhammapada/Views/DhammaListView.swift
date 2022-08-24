@@ -81,8 +81,8 @@ struct DhammaListView: View {
                     })
                     .sensitivity(.high)
                     .itemSpacing(10)
-                        .interactive(rotation: true)
-                        .interactive(scale: 0.7)
+                    .interactive(rotation: true)
+                    .interactive(scale: 0.7)
                 }
                 
                 else if(appDataManager.selectedLang == "mm") {
@@ -95,8 +95,8 @@ struct DhammaListView: View {
                     })
                     .sensitivity(.high)
                     .itemSpacing(10)
-                        .interactive(rotation: true)
-                        .interactive(scale: 0.7)
+                    .interactive(rotation: true)
+                    .interactive(scale: 0.7)
                 }
                 
                 else if(appDataManager.selectedLang == "pali") {
@@ -109,8 +109,8 @@ struct DhammaListView: View {
                     })
                     .sensitivity(.high)
                     .itemSpacing(10)
-                        .interactive(rotation: true)
-                        .interactive(scale: 0.7)
+                    .interactive(rotation: true)
+                    .interactive(scale: 0.7)
                 }
                 
                 else if(appDataManager.selectedLang == "roman") {
@@ -123,8 +123,8 @@ struct DhammaListView: View {
                     })
                     .sensitivity(.high)
                     .itemSpacing(10)
-                        .interactive(rotation: true)
-                        .interactive(scale: 0.7)
+                    .interactive(rotation: true)
+                    .interactive(scale: 0.7)
                 }
                    
               
